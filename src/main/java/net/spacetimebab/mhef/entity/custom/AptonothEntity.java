@@ -17,6 +17,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.spacetimebab.mhef.elements.ElementAttributes;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -37,7 +38,10 @@ public class AptonothEntity extends Monster implements IAnimatable {
                 .add(Attributes.MAX_HEALTH, 95.5D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
                 .add(Attributes.ATTACK_DAMAGE, 6.5D)
-                .add(Attributes.ARMOR,5D);
+                .add(Attributes.ARMOR,5D)
+                .add(ElementAttributes.ELEMENTAL_FIRE_RESISTANCE,5D)
+                .add(ElementAttributes.ICE_WEAKNESS,10D)
+                .add(ElementAttributes.LIGHTNING_WEAKNESS,12D);
     }
 
     protected void registerGoals() {

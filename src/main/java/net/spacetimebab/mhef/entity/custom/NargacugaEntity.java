@@ -17,6 +17,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.spacetimebab.mhef.elements.ElementAttributes;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -37,7 +38,11 @@ public class NargacugaEntity extends Monster implements IAnimatable {
                 .add(Attributes.MAX_HEALTH, 85.5D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
                 .add(Attributes.ATTACK_DAMAGE, 7.5D)
-                .add(Attributes.ARMOR,3D);
+                .add(Attributes.ARMOR,3D)
+                .add(ElementAttributes.ICE_RESISTANCE,5.0D)
+                .add(ElementAttributes.LIGHTNING_WEAKNESS,15.0D)
+                .add(ElementAttributes.ELEMENTAL_FIRE_RESISTANCE,10.0D)
+                .add(ElementAttributes.DRAGON_WEAKNESS,10.0D);
     }
 
     protected void registerGoals() {

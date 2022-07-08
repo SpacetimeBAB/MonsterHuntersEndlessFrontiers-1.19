@@ -18,6 +18,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.spacetimebab.mhef.elements.ElementAttributes;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
@@ -38,7 +39,8 @@ public class VelocipreyEntity extends Monster implements IAnimatable {
         return Mob.createMobAttributes()
                 .add(Attributes.MAX_HEALTH, 20.00D)
                 .add(Attributes.MOVEMENT_SPEED, 0.2D)
-                .add(Attributes.ATTACK_DAMAGE, 3.5D);
+                .add(Attributes.ATTACK_DAMAGE, 3.5D)
+                .add(ElementAttributes.ELEMENTAL_FIRE_WEAKNESS,10D);
     }
 
     protected void registerGoals() {

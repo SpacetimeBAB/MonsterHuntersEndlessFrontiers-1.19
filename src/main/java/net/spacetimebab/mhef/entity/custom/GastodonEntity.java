@@ -17,6 +17,7 @@ import net.minecraft.world.entity.monster.Monster;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.spacetimebab.mhef.elements.ElementAttributes;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -37,7 +38,9 @@ public class GastodonEntity extends Monster implements IAnimatable {
                 .add(Attributes.MAX_HEALTH, 30.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.4D)
                 .add(Attributes.ATTACK_DAMAGE, 5.0D)
-                .add(Attributes.ARMOR,2D);
+                .add(Attributes.ARMOR,2D)
+                .add(ElementAttributes.ELEMENTAL_FIRE_RESISTANCE,15.0D)
+                .add(ElementAttributes.ICE_WEAKNESS,15.0);
     }
 
     protected void registerGoals() {
