@@ -2,6 +2,7 @@ package net.spacetimebab.mhef.elements;
 
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.damagesource.EntityDamageSource;
+import net.spacetimebab.mhef.entity.client.GastodonModel;
 
 public class FireElementDamageSource extends DamageSource{
     public void setFireElement(boolean fireElement) {
@@ -28,5 +29,5 @@ public class FireElementDamageSource extends DamageSource{
     }
 
 
-
+GastodonModel
 }
