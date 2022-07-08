@@ -45,7 +45,6 @@ public class AptonothEntity extends Monster implements IAnimatable {
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
         this.goalSelector.addGoal(1,new MeleeAttackGoal(this,1.2D,false));
-        this.goalSelector.addGoal(2,new PanicGoal(this,1.2D));
     }
     class AptonothEntityMeleeGoal extends MeleeAttackGoal {
         public AptonothEntityMeleeGoal() {

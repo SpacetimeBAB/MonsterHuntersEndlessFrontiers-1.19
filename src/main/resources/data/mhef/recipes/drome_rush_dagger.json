@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "X",
+    "S",
+    "#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_bars"
+    },
+    "X": {
+      "item": "mhef:velocidrome_talons"
+    },
+    "S": {
+      "item": "mhef:velociprey_claw"
+    },
+    "result": {
+      "item": "mhef:drome_rush_dagger"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "item.mhef.velociprey_scale": "Velociprey Scale",
+  "item.mhef.velociprey_claw": "Velociprey Claw",
+  "item.mhef.velociprey_talons": "Velociprey Talons",
+  "item.mhef.velociprey_hide": "Velociprey Hide",
+  "item.mhef.velocidrome_scale": "Velocidrome Scale",
+  "item.mhef.velocidrome_claw": "Velocidrome Claw",
+  "item.mhef.velocidrome_talons": "Velocidrome Talons",
+  "item.mhef.velocidrome_hide": "Velocidrome Hide",
+  "item.mhef.shrieking_sac": "Shrieking Sac",
+  "item.mhef.velociprey_spawn_egg": "Velociprey Spawn Egg",
+  "item.mhef.velocidrome_spawn_egg": "Velocidrome Spawn Egg",
+  "item.mhef.drome_rush_dagger": "Drome Rush Dagger",
+  "entity.mhef.nargacuga": "Nargacuga",
+  "entity.mhef.velocidrome": "Velocidrome",
+  "entity.mhef.velociprey": "Velociprey",
+  "entity.mhef.aptonoth": "Aptonoth",
+  "item.mhef.aptonoth_spawn_egg": "Aptonoth Spawn Egg",
+  "item.mhef.nargacuga_spawn_egg": "Nargacuga Spawn Egg",
+  "entity.mhef.gastodon": "Gastodon",
+  "item.mhef.gastodon_spawn_egg": "Gastodon Spawn Egg"
+}

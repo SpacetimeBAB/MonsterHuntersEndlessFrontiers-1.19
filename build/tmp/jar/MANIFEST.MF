@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: mhef
+Specification-Vendor: mhef
+Specification-Version: 1
+Implementation-Title: MonsterHuntersEndlessFrontiers-1.19
+Implementation-Version: 0.0.1-1.19
+Implementation-Vendor: mhef
+Implementation-Timestamp: 2022-07-07T17:22:18-0400
+
