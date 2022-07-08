@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faf074ea-1af1-43da-b1bc-510f8146e3aa" name="Changes" comment="added smth.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/elements/DragonElementDamageSource.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/elements/FireElementDamageSource.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
