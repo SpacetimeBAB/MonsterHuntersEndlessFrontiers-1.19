@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.spacetimebab.mhef.elements.ElementAttributes;
 import net.spacetimebab.mhef.entity.ModEntityTypes;
 import net.spacetimebab.mhef.entity.client.VelocipreyRenderer;
 import net.spacetimebab.mhef.item.ModItems;
@@ -34,6 +35,8 @@ public class MHEF
         ModEntityTypes.register(modEventBus);
 
         GeckoLib.initialize();
+
+        ElementAttributes.register(modEventBus);
 
 
 
