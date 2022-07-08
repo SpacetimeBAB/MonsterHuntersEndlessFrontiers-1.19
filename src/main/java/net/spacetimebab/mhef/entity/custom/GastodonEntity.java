@@ -79,7 +79,7 @@ public class GastodonEntity extends Monster implements IAnimatable {
             return PlayState.CONTINUE;
         }
         if (this.isAggressive() && !(this.dead || this.getHealth() < 0.01 || this.isDeadOrDying())) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("Gastodon_RunCharge", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("Gastodon_Attack", true));
             return PlayState.CONTINUE;
         }
 
