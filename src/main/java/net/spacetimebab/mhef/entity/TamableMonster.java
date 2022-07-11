@@ -15,6 +15,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.animal.Animal;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.GameRules;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.scores.Team;
@@ -221,6 +222,17 @@ public abstract class TamableMonster extends TamableAnimal implements OwnableEnt
 
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
         return null;
+    }
+
+    protected boolean isTamed() {
+        return false;
+    }
+
+    protected InteractionResult fedFood(Player p_30713_, ItemStack itemstack) {
+        return null;
+    }
+
+    protected void makeMad() {
     }
 }
 

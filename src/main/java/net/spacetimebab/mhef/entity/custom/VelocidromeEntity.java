@@ -40,7 +40,7 @@ import software.bernie.geckolib3.core.manager.AnimationFactory;
 
         public static AttributeSupplier.Builder attributes() {
             return Mob.createMobAttributes()
-                    .add(Attributes.MAX_HEALTH, 35.5D)
+                    .add(Attributes.MAX_HEALTH, 55.5D)
                     .add(Attributes.MOVEMENT_SPEED, 0.2D)
                     .add(Attributes.ATTACK_DAMAGE, 5.5D)
                     .add(ElementAttributes.ICE_RESISTANCE,5.0D)

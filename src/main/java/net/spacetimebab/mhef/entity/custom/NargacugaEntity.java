@@ -35,7 +35,7 @@ public class NargacugaEntity extends Monster implements IAnimatable {
 
     public static AttributeSupplier.Builder attributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 85.5D)
+                .add(Attributes.MAX_HEALTH, 150.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.3D)
                 .add(Attributes.ATTACK_DAMAGE, 7.5D)
                 .add(Attributes.ARMOR,3D)

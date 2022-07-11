@@ -51,6 +51,8 @@ public class ModItems {
     public static final RegistryObject<Item> GASTODON_SPAWN_EGG = ITEMS.register("gastodon_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntityTypes.GASTODON, 0x5998C6, 0x19424A,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> ANCIENT_BONE = ITEMS.register("ancient_bone",
+            () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

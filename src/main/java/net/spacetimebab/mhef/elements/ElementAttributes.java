@@ -2,9 +2,13 @@ package net.spacetimebab.mhef.elements;
 
 import net.minecraft.core.Registry;
 import net.minecraft.world.entity.ai.attributes.Attribute;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.RangedAttribute;
 import net.minecraftforge.eventbus.api.IEventBus;
+import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+import net.spacetimebab.mhef.MHEF;
 
 public class ElementAttributes {
     public static final Attribute ICE_RESISTANCE = register("generic.ice_resistance", (new RangedAttribute("attribute.name.generic.ice_resistance", 0.0D, 0.0D, 20.0D)).setSyncable(true));
@@ -18,8 +22,13 @@ public class ElementAttributes {
     public static final Attribute DRAGON_WEAKNESS = register("generic.dragon_weakness", (new RangedAttribute("attribute.name.generic.dragon_weakness", 0.0D, 0.0D, 20.0D)).setSyncable(true));
     public static final Attribute ELEMENTAL_FIRE_WEAKNESS = register("generic.elemental_fire_weakness", (new RangedAttribute("attribute.name.generic.elemental_fire_weakness", 0.0D, 0.0D, 20.0D)).setSyncable(true));
 
-    private static Attribute register(String p_22291_, Attribute p_22292_) {
-        return ForgeRegistries.register(Registry.ATTRIBUTE, p_22291_, p_22292_);
+    private static Attribute register(String s, Attribute setSyncable) {
+        return setSyncable;
     }
 
+
+    public static final DeferredRegister<Attribute> ATTRIBUTES = DeferredRegister.create(ForgeRegistries.ATTRIBUTES, MHEF.MOD_ID);
+
+    public static void register(IEventBus modEventBus) {
+    }
 }

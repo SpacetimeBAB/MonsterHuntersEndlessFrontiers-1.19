@@ -28,8 +28,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.scores.Team;
 import net.minecraftforge.event.ForgeEventFactory;
+import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.elements.ElementAttributes;
 import net.spacetimebab.mhef.entity.TamableMonster;
+import net.spacetimebab.mhef.item.ModItems;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -43,16 +45,17 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
     private AnimationFactory factory = new AnimationFactory(this);
     private static final EntityDataAccessor<Boolean> SITTING =
             SynchedEntityData.defineId(VelocipreyEntity.class, EntityDataSerializers.BOOLEAN);
+
     public VelocipreyEntity(EntityType<? extends TamableMonster> entityType, Level level) {
         super(entityType, level);
     }
 
     public static AttributeSupplier.Builder attributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 20.00D)
+                .add(Attributes.MAX_HEALTH, 55.00D)
                 .add(Attributes.MOVEMENT_SPEED, 0.2D)
-                .add(Attributes.ATTACK_DAMAGE, 3.5D)
-                .add(ElementAttributes.ELEMENTAL_FIRE_WEAKNESS,10D);
+                .add(Attributes.ATTACK_DAMAGE, 5.5D)
+                .add(ElementAttributes.ELEMENTAL_FIRE_WEAKNESS, 10D);
     }
 
     protected void registerGoals() {
@@ -60,13 +63,12 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
         this.goalSelector.addGoal(4, new WaterAvoidingRandomStrollGoal(this, 1.0D));
         this.goalSelector.addGoal(5, new RandomLookAroundGoal(this));
         this.targetSelector.addGoal(6, (new HurtByTargetGoal(this)).setAlertOthers());
-        this.goalSelector.addGoal(1,new MeleeAttackGoal(this, 1.2, false));
-        this.goalSelector.addGoal(3,new NearestAttackableTargetGoal<>(this, Player.class, false));
-        this.goalSelector.addGoal(2,new NearestAttackableTargetGoal<>(this, Animal.class,false));
-        this.goalSelector.addGoal(1,new SitWhenOrderedToGoal(this));
-        this.goalSelector.addGoal(4,new FollowOwnerGoal(this,1.0D,10.0F,2.0F,false));
+        this.goalSelector.addGoal(1, new MeleeAttackGoal(this, 1.2, false));
+        this.goalSelector.addGoal(3, new NearestAttackableTargetGoal<>(this, Player.class, false));
+        this.goalSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, Animal.class, false));
+        this.goalSelector.addGoal(1, new SitWhenOrderedToGoal(this));
+        this.goalSelector.addGoal(4, new FollowOwnerGoal(this, 1.0D, 10.0F, 2.0F, true));
     }
-
 
 
     @Nullable
@@ -83,7 +85,7 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
             event.getController().setAnimation(new AnimationBuilder().addAnimation("Velociprey_Sit", true));
             return PlayState.CONTINUE;
         }
-        
+
 
         event.getController().setAnimation(new AnimationBuilder().addAnimation("Velociprey_Idle", true));
         return PlayState.CONTINUE;
@@ -117,9 +119,6 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
     }
 
 
-
-
-
     protected float getSoundVolume() {
         return 0.5F;
     }
@@ -129,15 +128,18 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
     public AgeableMob getBreedOffspring(ServerLevel p_146743_, AgeableMob p_146744_) {
         return null;
     }
+
     /* TAMEABLE */
     @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-        Item item = itemstack.getItem();
+        Item iteme = itemstack.getItem();
+        Item Item = itemstack.getItem();
 
         Item itemForTaming = Items.ROTTEN_FLESH;
+        RegistryObject<Item> itemForGrowing = ModItems.ANCIENT_BONE;
 
-        if (item == itemForTaming && !isTame()) {
+        if (iteme == itemForTaming && !isTame()) {
             if (this.level.isClientSide) {
                 return InteractionResult.CONSUME;
             } else {
@@ -150,7 +152,7 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
                         super.tame(player);
                         this.navigation.recomputePath();
                         this.setTarget(null);
-                        this.level.broadcastEntityEvent(this, (byte)7);
+                        this.level.broadcastEntityEvent(this, (byte) 7);
                         setSitting(true);
                     }
                 }
@@ -159,7 +161,7 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
             }
         }
 
-        if(isTame() && !this.level.isClientSide && hand == InteractionHand.MAIN_HAND) {
+        if (isTame() && !this.level.isClientSide && hand == InteractionHand.MAIN_HAND) {
             setSitting(!isSitting());
             return InteractionResult.SUCCESS;
         }

@@ -35,7 +35,7 @@ public class GastodonEntity extends Monster implements IAnimatable {
 
     public static AttributeSupplier.Builder attributes() {
         return Mob.createMobAttributes()
-                .add(Attributes.MAX_HEALTH, 30.0D)
+                .add(Attributes.MAX_HEALTH, 70.0D)
                 .add(Attributes.MOVEMENT_SPEED, 0.4D)
                 .add(Attributes.ATTACK_DAMAGE, 5.0D)
                 .add(Attributes.ARMOR,2D)
@@ -75,7 +75,7 @@ public class GastodonEntity extends Monster implements IAnimatable {
     @Nullable
     private <E extends IAnimatable> PlayState predicate(AnimationEvent<E> event) {
         if (event.isMoving()) {
-            event.getController().setAnimation(new AnimationBuilder().addAnimation("gastodon_walk", true));
+            event.getController().setAnimation(new AnimationBuilder().addAnimation("Gastodon_walk", true));
             return PlayState.CONTINUE;
         }
         if (this.isAggressive() && !(this.dead || this.getHealth() < 0.01 || this.isDeadOrDying())) {
