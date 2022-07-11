@@ -19,5 +19,7 @@
   "item.mhef.nargacuga_spawn_egg": "Nargacuga Spawn Egg",
   "entity.mhef.gastodon": "Gastodon",
   "item.mhef.gastodon_spawn_egg": "Gastodon Spawn Egg",
-  "item.mhef.ancient_bone": "Ancient Bone"
+  "item.mhef.ancient_bone": "Ancient Bone",
+  "entity.mhef.popo": "Popo",
+  "item.mhef.popo_spawn_egg": "Popo Spawn Egg"
 }

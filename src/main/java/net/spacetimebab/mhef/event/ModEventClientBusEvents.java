@@ -18,5 +18,6 @@ public class ModEventClientBusEvents {
         EntityRenderers.register(ModEntityTypes.NARGACUGA.get(), NargacugaRenderer::new);
         EntityRenderers.register(ModEntityTypes.APTONOTH.get(), AptonothRenderer::new);
         EntityRenderers.register(ModEntityTypes.GASTODON.get(), GastodonRenderer::new);
+        EntityRenderers.register(ModEntityTypes.POPO.get(),PopoRenderer::new);
     }
 }

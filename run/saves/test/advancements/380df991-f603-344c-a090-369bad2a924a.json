@@ -11,6 +11,12 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/firework_rocket_simple": {
+    "criteria": {
+      "has_gunpowder": "2022-07-10 21:07:43 -0400"
+    },
+    "done": true
+  },
   "minecraft:recipes/redstone/oak_fence_gate": {
     "criteria": {
       "has_planks": "2022-07-03 18:00:18 -0400"
@@ -26,6 +32,12 @@
   "minecraft:recipes/redstone/dispenser": {
     "criteria": {
       "has_bow": "2022-07-06 16:10:06 -0400"
+    },
+    "done": true
+  },
+  "minecraft:recipes/redstone/tnt": {
+    "criteria": {
+      "has_gunpowder": "2022-07-10 21:07:43 -0400"
     },
     "done": true
   },
@@ -55,13 +67,16 @@
   },
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
-      "minecraft:spider": "2022-07-06 16:07:51 -0400"
+      "minecraft:spider": "2022-07-06 16:07:51 -0400",
+      "minecraft:creeper": "2022-07-10 21:07:41 -0400"
     },
     "done": false
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
-      "porkchop": "2022-07-05 14:48:49 -0400"
+      "cooked_beef": "2022-07-10 21:09:25 -0400",
+      "porkchop": "2022-07-05 14:48:49 -0400",
+      "golden_apple": "2022-07-10 21:08:59 -0400"
     },
     "done": false
   },

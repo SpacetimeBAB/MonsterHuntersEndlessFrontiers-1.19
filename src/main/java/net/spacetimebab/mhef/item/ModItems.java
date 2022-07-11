@@ -53,6 +53,9 @@ public class ModItems {
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> ANCIENT_BONE = ITEMS.register("ancient_bone",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> POPO_SPAWN_EGG = ITEMS.register("popo_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntityTypes.POPO, 0x4D3D2D, 0xC27007,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

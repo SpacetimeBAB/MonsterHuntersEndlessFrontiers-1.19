@@ -16,6 +16,7 @@ public class ModEventBusEvents {
         event.put(ModEntityTypes.NARGACUGA.get(),NargacugaEntity.attributes().build());
         event.put(ModEntityTypes.APTONOTH.get(), AptonothEntity.attributes().build());
         event.put(ModEntityTypes.GASTODON.get(), GastodonEntity.attributes().build());
+        event.put(ModEntityTypes.POPO.get(),PopoEntity.attributes().build());
 
     }
 }

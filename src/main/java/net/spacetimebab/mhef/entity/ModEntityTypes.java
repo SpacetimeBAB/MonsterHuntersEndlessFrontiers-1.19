@@ -40,6 +40,11 @@ public class ModEntityTypes {
                     () -> EntityType.Builder.of(GastodonEntity::new, MobCategory.MONSTER)
                             .sized(2.3f, 1f)
                             .build(new ResourceLocation(MHEF.MOD_ID, "gastodon").toString()));
+    public static final RegistryObject<EntityType<PopoEntity>> POPO =
+            ENTITY_TYPES.register("popo",
+                    () -> EntityType.Builder.of(PopoEntity::new, MobCategory.MONSTER)
+                            .sized(3f, 3f)
+                            .build(new ResourceLocation(MHEF.MOD_ID, "popo").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);
