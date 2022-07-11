@@ -5,38 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="faf074ea-1af1-43da-b1bc-510f8146e3aa" name="Changes" comment="added smth.">
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2022-07-10_21.10.06-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/crash-reports/crash-2022-07-10_21.35.14-client.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2022-07-10-2.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run/logs/2022-07-10-3.log.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/client/PopoModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/client/PopoRenderer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/custom/PopoEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/animations/popo.animation.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/geo/popo.geo.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/models/item/popo_spawn_egg.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/naked_popo_saddle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/popo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/popo_saddle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/run/logs/2022-07-10-4.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/ModEntityTypes.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/ModEntityTypes.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/custom/GastodonEntity$GastodonMeleeAttackGoal.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/custom/GastodonEntity$GastodonMeleeAttackGoal.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/custom/GastodonEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/custom/GastodonEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/custom/VelocipreyEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/entity/custom/VelocipreyEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/event/ModEventBusEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/event/ModEventBusEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/event/ModEventClientBusEvents.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/event/ModEventClientBusEvents.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/item/ModItems.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/net/spacetimebab/mhef/item/ModItems.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mhef/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mhef/lang/en_us.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mhef/textures/entity/popo/naked_popo_saddle.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mhef/textures/entity/popo/naked_popo_saddle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mhef/textures/entity/popo/popo.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mhef/textures/entity/popo/popo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/assets/mhef/textures/entity/popo/popo_saddle.png" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/assets/mhef/textures/entity/popo/popo_saddle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/2022-07-10-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-07-10-1.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-07-10-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-07-10-2.log.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/run/logs/2022-07-10-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/2022-07-10-3.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-1.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-1.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-2.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-2.log.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/logs/debug-3.log.gz" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/debug-3.log.gz" afterDir="false" />
@@ -46,7 +29,6 @@
       <change beforePath="$PROJECT_DIR$/run/logs/latest.log" beforeDir="false" afterPath="$PROJECT_DIR$/run/logs/latest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/test/DIM-1/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/DIM-1/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/test/DIM1/data/raids_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/DIM1/data/raids_end.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run/saves/test/advancements/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/advancements/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/test/data/raids.dat" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/data/raids.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/test/entities/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/entities/r.-1.-1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/test/entities/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/entities/r.-1.0.mca" afterDir="false" />
@@ -73,12 +55,9 @@
       <change beforePath="$PROJECT_DIR$/run/saves/test/region/r.1.1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/region/r.1.1.mca" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/saves/test/stats/380df991-f603-344c-a090-369bad2a924a.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/saves/test/stats/380df991-f603-344c-a090-369bad2a924a.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/run/usercache.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/ModEntityTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/ModEntityTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/custom/GastodonEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/entity/custom/GastodonEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/event/ModEventBusEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/event/ModEventBusEvents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/event/ModEventClientBusEvents.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/event/ModEventClientBusEvents.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/item/ModItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/spacetimebab/mhef/item/ModItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mhef/lang/en_us.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/lang/en_us.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/naked_popo_saddle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/naked_popo_saddle.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/popo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/popo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/popo_saddle.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/mhef/textures/entity/popo/popo_saddle.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
