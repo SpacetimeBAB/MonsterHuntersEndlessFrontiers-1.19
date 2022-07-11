@@ -19,16 +19,5 @@ public class PopoRenderer extends GeoEntityRenderer<PopoEntity> {
         super(renderManager, new PopoModel() );
         this.shadowRadius = 3f;
     }
-    @Override
-    public @NotNull ResourceLocation getTextureLocation(@NotNull PopoEntity instance) {
-        return new ResourceLocation(MHEF.MOD_ID, "textures/entity/popo/popo.png");
-    }
 
-    @Override
-    public RenderType getRenderType(PopoEntity animatable, float partialTicks, PoseStack stack,
-                                    MultiBufferSource renderTypeBuffer, VertexConsumer vertexBuilder, int packedLightIn,
-                                    ResourceLocation textureLocation) {
-        stack.scale(1F, 1F, 1F);
-        return super.getRenderType(animatable, partialTicks, stack, renderTypeBuffer, vertexBuilder, packedLightIn, textureLocation);
-    }
 }
