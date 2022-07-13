@@ -1,8 +1,6 @@
 package net.spacetimebab.mhef;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.client.renderer.entity.EntityRenderers;
-import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -10,9 +8,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.spacetimebab.mhef.elements.ElementAttributes;
-import net.spacetimebab.mhef.entity.ModEntityTypes;
-import net.spacetimebab.mhef.entity.client.VelocipreyRenderer;
-import net.spacetimebab.mhef.item.ModItems;
+import net.spacetimebab.mhef.init.EntityInit;
+import net.spacetimebab.mhef.init.ItemInit;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -27,12 +24,12 @@ public class MHEF
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItems.register(modEventBus);
+        ItemInit.register(modEventBus);
 
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
-        ModEntityTypes.register(modEventBus);
+        EntityInit.register(modEventBus);
 
         GeckoLib.initialize();
 

@@ -31,7 +31,7 @@ import net.minecraftforge.event.ForgeEventFactory;
 import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.elements.ElementAttributes;
 import net.spacetimebab.mhef.entity.TamableMonster;
-import net.spacetimebab.mhef.item.ModItems;
+import net.spacetimebab.mhef.init.ItemInit;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -137,7 +137,7 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
         Item Item = itemstack.getItem();
 
         Item itemForTaming = Items.ROTTEN_FLESH;
-        RegistryObject<Item> itemForGrowing = ModItems.ANCIENT_BONE;
+        RegistryObject<Item> itemForGrowing = ItemInit.ANCIENT_BONE;
 
         if (iteme == itemForTaming && !isTame()) {
             if (this.level.isClientSide) {

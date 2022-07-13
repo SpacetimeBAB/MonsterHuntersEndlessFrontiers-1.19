@@ -1,4 +1,4 @@
-package net.spacetimebab.mhef.entity;
+package net.spacetimebab.mhef.init;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
@@ -10,7 +10,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.MHEF;
 import net.spacetimebab.mhef.entity.custom.*;
 
-public class ModEntityTypes {
+public class EntityInit {
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITIES, MHEF.MOD_ID);
 
