@@ -10,6 +10,7 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.spacetimebab.mhef.elements.ElementAttributes;
 import net.spacetimebab.mhef.init.EntityInit;
 import net.spacetimebab.mhef.init.ItemInit;
+import net.spacetimebab.mhef.quest.QuestInit;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -34,6 +35,9 @@ public class MHEF
         GeckoLib.initialize();
 
         ElementAttributes.register(modEventBus);
+        QuestInit.QUESTS.register(modEventBus);
+        QuestInit.REWARDS.register(modEventBus);
+        QuestInit.OBJECTIVES.register(modEventBus);
 
 
 

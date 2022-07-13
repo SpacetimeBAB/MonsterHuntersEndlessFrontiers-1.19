@@ -8,7 +8,7 @@ import net.spacetimebab.mhef.init.EntityInit;
 import net.spacetimebab.mhef.entity.custom.*;
 
 @Mod.EventBusSubscriber(modid = MHEF.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
-public class ModEventBusEvents {
+public class CommonModEvents {
     @SubscribeEvent
     public static void entityAttributeEvent(EntityAttributeCreationEvent event) {
         event.put(EntityInit.VELOCIPREY.get(), VelocipreyEntity.attributes().build());
@@ -19,4 +19,6 @@ public class ModEventBusEvents {
         event.put(EntityInit.POPO.get(),PopoEntity.attributes().build());
 
     }
+
+
 }

@@ -1,0 +1,20 @@
+{
+  "type": "collection",
+  "name": "Example Quest2",
+  "description": "This is an example quest.",
+  "rarity": "common",
+  "rewards": [
+    {
+      "type": "item",
+      "item": "example_item",
+      "quantity": 1
+    }
+  ],
+  "objectives": [
+    {
+      "type": "kill",
+      "entity": "example_mob#variant",
+      "quantity": 1
+    }
+  ]
+}
