@@ -21,5 +21,6 @@
   "item.mhef.gastodon_spawn_egg": "Gastodon Spawn Egg",
   "item.mhef.ancient_bone": "Ancient Bone",
   "entity.mhef.popo": "Popo",
-  "item.mhef.popo_spawn_egg": "Popo Spawn Egg"
+  "item.mhef.popo_spawn_egg": "Popo Spawn Egg",
+  "enchantment.mhef.elemental_fire_protection": "Elemental Fire Protection"
 }
