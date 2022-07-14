@@ -18,11 +18,11 @@ public class KillObjective implements QuestObjective {
         return QuestInit.KILL_OBJECTIVE.get();
     }
 
-    public static Integer getAmount(KillObjective o) {
+    public static Integer amount(KillObjective o) {
         return o.amount;
     }
 
-    public static String getEntity(KillObjective o) {
+    public static String entity(KillObjective o) {
         return o.entity;
     }
 

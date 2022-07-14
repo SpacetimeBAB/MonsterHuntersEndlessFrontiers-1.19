@@ -18,11 +18,11 @@ public class CollectionObjective implements QuestObjective {
         return QuestInit.COLLECT_OBJECTIVE.get();
     }
 
-    public static Integer getAmount(CollectionObjective o) {
+    public static Integer quantity(CollectionObjective o) {
         return o.amount;
     }
 
-    public static String getItem(CollectionObjective o) {
+    public static String item(CollectionObjective o) {
         return o.item;
     }
 

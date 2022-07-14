@@ -21,13 +21,13 @@ public class QuestInit {
 
 
     public static final RegistryObject<Codec<KillObjective>> KILL_OBJECTIVE = OBJECTIVES.register("kill", () -> RecordCodecBuilder.create(instance -> instance.group(
-            Codec.STRING.fieldOf("entity").forGetter(KillObjective::getEntity),
-            Codec.INT.fieldOf("amount").forGetter(KillObjective::getAmount)
+            Codec.STRING.fieldOf("entity").forGetter(KillObjective::entity),
+            Codec.INT.fieldOf("quantity").forGetter(KillObjective::amount)
             ).apply(instance, KillObjective::new)));
 
     public static final RegistryObject<Codec<CollectionObjective>> COLLECT_OBJECTIVE = OBJECTIVES.register("collect", () -> RecordCodecBuilder.create(instance -> instance.group(
-            Codec.STRING.fieldOf("item").forGetter(CollectionObjective::getItem),
-            Codec.INT.fieldOf("amount").forGetter(CollectionObjective::getAmount)
+            Codec.STRING.fieldOf("item").forGetter(CollectionObjective::item),
+            Codec.INT.fieldOf("quantity").forGetter(CollectionObjective::quantity)
             ).apply(instance, CollectionObjective::new)));
 
     public static final RegistryObject<Codec<ItemReward>> ITEM_REWARD = REWARDS.register("item", () -> RecordCodecBuilder.create(builder1 ->
