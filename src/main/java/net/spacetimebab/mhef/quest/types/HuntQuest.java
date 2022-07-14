@@ -1,6 +1,10 @@
-package net.spacetimebab.mhef.quest;
+package net.spacetimebab.mhef.quest.types;
 
 import com.mojang.serialization.Codec;
+import net.spacetimebab.mhef.quest.objectives.KillObjective;
+import net.spacetimebab.mhef.quest.api.Quest;
+import net.spacetimebab.mhef.init.QuestInit;
+import net.spacetimebab.mhef.quest.api.Reward;
 
 import java.util.List;
 

@@ -1,18 +1,18 @@
 {
-  "type": "hunt",
+  "type": "mhef:hunt",
   "name": "Example Quest",
   "description": "This is an example quest.",
   "rarity": "common",
   "rewards": [
     {
-      "type": "item",
+      "type": "mhef:item",
       "item": "example_item",
       "quantity": 1
     }
   ],
   "objectives": [
     {
-      "type": "kill",
+      "type": "mhef:kill",
       "entity": "example_mob#variant",
       "quantity": 1
     }

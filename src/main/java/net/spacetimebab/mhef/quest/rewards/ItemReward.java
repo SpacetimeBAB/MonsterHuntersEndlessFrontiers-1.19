@@ -1,8 +1,10 @@
-package net.spacetimebab.mhef.quest;
+package net.spacetimebab.mhef.quest.rewards;
 
 import com.mojang.serialization.Codec;
+import net.spacetimebab.mhef.init.QuestInit;
+import net.spacetimebab.mhef.quest.api.Reward;
 
-public class ItemReward implements Reward{
+public class ItemReward implements Reward {
 
 
     private final String item;

@@ -1,19 +1,19 @@
 {
-  "type": "collection",
+  "type": "mhef:collection",
   "name": "Example Quest2",
   "description": "This is an example quest.",
   "rarity": "common",
   "rewards": [
     {
-      "type": "item",
+      "type": "mhef:item",
       "item": "example_item",
       "quantity": 1
     }
   ],
   "objectives": [
     {
-      "type": "kill",
-      "entity": "example_mob#variant",
+      "type": "mhef:collection",
+      "item": "example_item",
       "quantity": 1
     }
   ]

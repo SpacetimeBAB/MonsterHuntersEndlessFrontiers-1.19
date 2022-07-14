@@ -1,6 +1,8 @@
-package net.spacetimebab.mhef.quest;
+package net.spacetimebab.mhef.quest.objectives;
 
 import com.mojang.serialization.Codec;
+import net.spacetimebab.mhef.init.QuestInit;
+import net.spacetimebab.mhef.quest.api.QuestObjective;
 
 public class KillObjective implements QuestObjective {
 
