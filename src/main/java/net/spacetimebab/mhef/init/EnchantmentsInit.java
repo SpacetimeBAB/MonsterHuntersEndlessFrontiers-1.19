@@ -6,25 +6,25 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.spacetimebab.mhef.MHEF;
-import net.spacetimebab.mhef.enchantment.ElementalResistanceEnchantments;
+//import net.spacetimebab.mhef.enchantment.ElementalResistanceEnchantments;
 import net.spacetimebab.mhef.enchantment.ModType;
 
 
-public class EnchantmentsInit {
-    private static final EquipmentSlot[] ARMOR_SLOTS = new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
+//public class EnchantmentsInit {
+   // private static final EquipmentSlot[] ARMOR_SLOTS = new EquipmentSlot[]{EquipmentSlot.HEAD, EquipmentSlot.CHEST, EquipmentSlot.LEGS, EquipmentSlot.FEET};
 
-    public static final DeferredRegister<Enchantment> ENCHANTMENTS
-                = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, MHEF.MOD_ID);
-    public static final Enchantment ELEMENTAL_FIRE_PROTECTION =
-            register("elemental_fire_protection", new ElementalResistanceEnchantments(Enchantment.Rarity.UNCOMMON,
-                    ModType.ELEMENTAL_FIRE, ARMOR_SLOTS, type));
+   // public static final DeferredRegister<Enchantment> ENCHANTMENTS
+          //      = DeferredRegister.create(ForgeRegistries.ENCHANTMENTS, MHEF.MOD_ID);
+  //  public static final Enchantment ELEMENTAL_FIRE_PROTECTION =
+          //  register("elemental_fire_protection", new ElementalResistanceEnchantments(Enchantment.Rarity.UNCOMMON,
+               //     ModType.ELEMENTAL_FIRE, ARMOR_SLOTS, type));
 
-    private static Enchantment register(String elemental_fire_protection, ElementalResistanceEnchantments elementalResistanceEnchantments) {
-        return null;
-    }
+   // private static Enchantment register(String elemental_fire_protection, ElementalResistanceEnchantments elementalResistanceEnchantments) {
+   //     return null;
+  //  }
 
 
-    public static void register(IEventBus eventBus) {
-            ENCHANTMENTS.register(eventBus);
-        }
-}
+   // public static void register(IEventBus eventBus) {
+      //      ENCHANTMENTS.register(eventBus);
+       // }
+//}

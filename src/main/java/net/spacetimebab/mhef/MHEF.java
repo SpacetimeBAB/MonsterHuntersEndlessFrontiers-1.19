@@ -8,7 +8,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.spacetimebab.mhef.elements.ElementAttributes;
-import net.spacetimebab.mhef.init.EnchantmentsInit;
+import net.spacetimebab.mhef.init.EffectInit;
+//import net.spacetimebab.mhef.init.EnchantmentsInit;
 import net.spacetimebab.mhef.init.EntityInit;
 import net.spacetimebab.mhef.init.ItemInit;
 import net.spacetimebab.mhef.quest.QuestInit;
@@ -39,7 +40,8 @@ public class MHEF
         QuestInit.QUESTS.register(modEventBus);
         QuestInit.REWARDS.register(modEventBus);
         QuestInit.OBJECTIVES.register(modEventBus);
-        EnchantmentsInit.register(modEventBus);
+        //EnchantmentsInit.register(modEventBus);
+        EffectInit.register(modEventBus);
 
 
 
