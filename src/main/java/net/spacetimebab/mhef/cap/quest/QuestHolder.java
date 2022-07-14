@@ -6,7 +6,6 @@ import dev._100media.capabilitysyncer.network.SimpleLevelCapabilityStatusPacket;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.level.Level;
 import net.minecraftforge.network.simple.SimpleChannel;
-import net.spacetimebab.mhef.quest.QuestInfo;
 import net.spacetimebab.mhef.network.NetworkHandler;
 
 import java.util.ArrayList;

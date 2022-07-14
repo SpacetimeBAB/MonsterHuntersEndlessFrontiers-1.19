@@ -1,7 +1,8 @@
-package net.spacetimebab.mhef.quest;
+package net.spacetimebab.mhef.quest.api;
 
 import com.mojang.serialization.Codec;
 import net.minecraft.util.ExtraCodecs;
+import net.spacetimebab.mhef.init.QuestInit;
 
 import java.util.function.Function;
 

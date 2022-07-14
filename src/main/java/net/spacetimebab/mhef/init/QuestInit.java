@@ -1,4 +1,4 @@
-package net.spacetimebab.mhef.quest;
+package net.spacetimebab.mhef.init;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
@@ -8,6 +8,15 @@ import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.RegistryBuilder;
 import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.MHEF;
+import net.spacetimebab.mhef.quest.api.Quest;
+import net.spacetimebab.mhef.quest.api.QuestObjective;
+import net.spacetimebab.mhef.quest.api.Reward;
+import net.spacetimebab.mhef.quest.objectives.CollectionObjective;
+import net.spacetimebab.mhef.quest.objectives.KillObjective;
+import net.spacetimebab.mhef.quest.rewards.ExperienceReward;
+import net.spacetimebab.mhef.quest.rewards.ItemReward;
+import net.spacetimebab.mhef.quest.types.CollectionQuest;
+import net.spacetimebab.mhef.quest.types.HuntQuest;
 
 import java.util.function.Supplier;
 

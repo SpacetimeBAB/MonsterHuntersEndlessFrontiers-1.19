@@ -11,7 +11,7 @@ import net.spacetimebab.mhef.elements.ElementAttributes;
 import net.spacetimebab.mhef.init.EnchantmentsInit;
 import net.spacetimebab.mhef.init.EntityInit;
 import net.spacetimebab.mhef.init.ItemInit;
-import net.spacetimebab.mhef.quest.QuestInit;
+import net.spacetimebab.mhef.init.QuestInit;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -21,7 +21,7 @@ public class MHEF
 {
     public static final String MOD_ID = "mhef";
     // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public MHEF()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
