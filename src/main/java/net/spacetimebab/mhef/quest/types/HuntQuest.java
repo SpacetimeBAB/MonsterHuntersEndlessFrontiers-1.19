@@ -1,6 +1,7 @@
 package net.spacetimebab.mhef.quest.types;
 
 import com.mojang.serialization.Codec;
+import net.spacetimebab.mhef.quest.api.QuestRarity;
 import net.spacetimebab.mhef.quest.objectives.KillObjective;
 import net.spacetimebab.mhef.quest.api.Quest;
 import net.spacetimebab.mhef.init.QuestInit;
@@ -31,6 +32,9 @@ public class HuntQuest implements Quest {
         return o.description;
     }
 
+    public QuestRarity getRarity() {
+        return QuestRarity.getByDescription(rarity);
+    }
     public static String rarity(HuntQuest o) {
         return o.rarity;
     }
@@ -38,6 +42,11 @@ public class HuntQuest implements Quest {
     @Override
     public Codec<? extends Quest> codec() {
         return QuestInit.HUNT_QUESTS.get();
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     public static List<Reward> rewards(HuntQuest o) {

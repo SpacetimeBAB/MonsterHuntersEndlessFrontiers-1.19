@@ -16,9 +16,9 @@ public class ElementalResistanceEnchantments extends ProtectionEnchantment {
 
 
 
-    public ElementalResistanceEnchantments(Rarity pRarity, Type type, Type pType, EquipmentSlot... pApplicableSlots) {
+    public ElementalResistanceEnchantments(Rarity pRarity, Type pType, EquipmentSlot... pApplicableSlots) {
         super(pRarity, pType, pApplicableSlots);
-        this.type = type;
+        this.type = pType;
     }
 
 
@@ -41,10 +41,10 @@ public class ElementalResistanceEnchantments extends ProtectionEnchantment {
 
         if (pSource.isBypassInvul()) {
             return 0;
-        } else if (this.type equals( ModType.ELEMENTAL_FIRE); {
+        } else if (type.equals( ModType.ELEMENTAL_FIRE)); {
             return pLevel;
         }
-        return pLevel;
+//        return pLevel;
     }
 
 
@@ -59,10 +59,10 @@ public class ElementalResistanceEnchantments extends ProtectionEnchantment {
         }
 
     public static int getElementalFireAfterDampener(LivingEntity pLivingEntity, int pLevel) {
-        int i = EnchantmentHelper.getEnchantmentLevel(EnchantmentsInit.ELEMENTAL_FIRE_PROTECTION, pLivingEntity);
-        if (i > 0) {
-            pLevel -= Mth.floor((float)pLevel * (float)i * 0.15F);
-        }
+//        int i = EnchantmentHelper.getEnchantmentLevel(EnchantmentsInit.ELEMENTAL_FIRE_PROTECTION, pLivingEntity);
+//        if (i > 0) {
+//            pLevel -= Mth.floor((float)pLevel * (float)i * 0.15F);
+//        }
 
         return pLevel;
     }

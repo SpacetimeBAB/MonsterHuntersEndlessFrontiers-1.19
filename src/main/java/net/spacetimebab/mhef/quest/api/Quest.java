@@ -11,7 +11,8 @@ public interface Quest {
     Codec<Quest> DIRECT_CODEC = ExtraCodecs.lazyInitializedCodec(() -> QuestInit.QUEST_SUPPLIER.get().getCodec())
             .dispatch(Quest::codec, Function.identity());
 
-
+    QuestRarity getRarity();
     Codec<? extends Quest> codec();
 
+    String getName();
 }

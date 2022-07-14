@@ -1,6 +1,8 @@
 package net.spacetimebab.mhef.enchantment;
 
-public enum ModType {
+import net.minecraft.world.item.enchantment.ProtectionEnchantment;
+
+public enum ModType  {
     ELEMENTAL_FIRE(10, 8);
 
 

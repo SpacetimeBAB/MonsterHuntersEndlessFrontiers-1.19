@@ -15,7 +15,7 @@ import java.util.Map;
 
 public class QuestHolder extends LevelCapability {
 
-    private Map<String, QuestInfo> particles = new HashMap<>();
+//    private Map<String, QuestInfo> particles = new HashMap<>();
 
     protected QuestHolder(Level level) {
         super(level);
@@ -25,33 +25,33 @@ public class QuestHolder extends LevelCapability {
     @Override
     public CompoundTag serializeNBT(boolean savingToDisk) {
         CompoundTag tag = new CompoundTag();
-        particles.forEach((name,particleInfo) -> particleInfo.saveInfo(name,tag));
+//        particles.forEach((name,particleInfo) -> particleInfo.saveInfo(name,tag));
         return tag;
     }
 
     @Override
     public void deserializeNBT(CompoundTag nbt, boolean readingFromDisk) {
-        nbt.getAllKeys().forEach(key -> {
-            particles.put(key,(QuestInfo.loadInfo(nbt.getCompound(key))));
-        });
+//        nbt.getAllKeys().forEach(key -> {
+//            particles.put(key,(QuestInfo.loadInfo(nbt.getCompound(key))));
+//        });
     }
 
-
-    public void addParticle(QuestInfo particleInfo) {
-        particles.put(particleInfo.getName(), particleInfo);
-        this.updateTracking();
-    }
-    public void removeParticle(QuestInfo particleInfo) {
-        particles.remove(particleInfo.getName());
-        this.updateTracking();
-    }
-    public QuestInfo getParticle(String name) {
-        return particles.get(name);
-    }
-    public List<QuestInfo> getParticles() {
-        return new ArrayList<>(particles.values());
-    }
-
+//
+//    public void addParticle(QuestInfo particleInfo) {
+//        particles.put(particleInfo.getName(), particleInfo);
+//        this.updateTracking();
+//    }
+//    public void removeParticle(QuestInfo particleInfo) {
+//        particles.remove(particleInfo.getName());
+//        this.updateTracking();
+//    }
+//    public QuestInfo getParticle(String name) {
+//        return particles.get(name);
+//    }
+//    public List<QuestInfo> getParticles() {
+//        return new ArrayList<>(particles.values());
+//    }
+//
 
     @Override
     public LevelCapabilityStatusPacket createUpdatePacket() {

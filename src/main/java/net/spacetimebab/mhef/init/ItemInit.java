@@ -14,6 +14,14 @@ import net.spacetimebab.mhef.item.ModTiers;
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MHEF.MOD_ID);
 
+
+    public static final RegistryObject<Item> COMMON_QUEST = ITEMS.register("common_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> HIGH_QUEST = ITEMS.register("high_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> MASTER_QUEST = ITEMS.register("master_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> TEMPERED_QUEST = ITEMS.register("tempered_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+
+
+
     public static final RegistryObject<Item> VELOCIPREY_SCALE = ITEMS.register("velociprey_scale",
             () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
     public static final RegistryObject<Item> VELOCIPREY_CLAW = ITEMS.register("velociprey_claw",
@@ -61,6 +69,7 @@ public class ItemInit {
     }
 
 
-
-
+    public static Item.Properties getItemProperties() {
+        return new Item.Properties().tab(CreativeModeTab.TAB_MISC);
+    }
 }
