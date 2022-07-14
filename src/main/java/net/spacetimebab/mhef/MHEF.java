@@ -12,7 +12,11 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import net.spacetimebab.mhef.datagen.*;
 import net.spacetimebab.mhef.elements.ElementAttributes;
-import net.spacetimebab.mhef.init.*;
+import net.spacetimebab.mhef.init.EffectInit;
+//import net.spacetimebab.mhef.init.EnchantmentsInit;
+import net.spacetimebab.mhef.init.EntityInit;
+import net.spacetimebab.mhef.init.ItemInit;
+import net.spacetimebab.mhef.init.QuestInit;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -40,8 +44,9 @@ public class MHEF
         QuestInit.QUESTS.register(modEventBus);
         QuestInit.REWARDS.register(modEventBus);
         QuestInit.OBJECTIVES.register(modEventBus);
-        EnchantmentsInit.register(modEventBus);
-        BlockInit.BLOCKS.register(modEventBus);
+        //EnchantmentsInit.register(modEventBus);
+        EffectInit.register(modEventBus);
+
 
 
         // Register ourselves for server and other game events we are interested in

@@ -22,5 +22,6 @@
   "item.mhef.ancient_bone": "Ancient Bone",
   "entity.mhef.popo": "Popo",
   "item.mhef.popo_spawn_egg": "Popo Spawn Egg",
-  "enchantment.mhef.elemental_fire_protection": "Elemental Fire Protection"
+  "enchantment.mhef.elemental_fire_protection": "Elemental Fire Protection",
+  "effect.mhef.paralyzed": "Paralyzed"
 }
