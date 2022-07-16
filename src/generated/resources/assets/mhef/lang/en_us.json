@@ -26,5 +26,7 @@
   "item.mhef.velociprey_hide": "Velociprey Hide",
   "item.mhef.velociprey_scale": "Velociprey Scale",
   "item.mhef.velociprey_spawn_egg": "Velociprey Spawn Egg",
-  "item.mhef.velociprey_talons": "Velociprey Talons"
+  "item.mhef.velociprey_talons": "Velociprey Talons",
+  "effect.mhef.paralyzed": "Paralyzed",
+  "effect.mhef.dragon_blight": "Dragon Blight"
 }
