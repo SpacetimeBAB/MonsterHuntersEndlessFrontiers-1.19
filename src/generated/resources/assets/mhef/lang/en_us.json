@@ -28,5 +28,7 @@
   "item.mhef.velociprey_spawn_egg": "Velociprey Spawn Egg",
   "item.mhef.velociprey_talons": "Velociprey Talons",
   "effect.mhef.paralyzed": "Paralyzed",
-  "effect.mhef.dragon_blight": "Dragon Blight"
+  "effect.mhef.dragon_blight": "Dragon Blight",
+  "entity.mhef.anjanath": "Anjanath",
+  "item.mhef.anjanath_spawn_egg": "Anjanath Spawn Egg"
 }

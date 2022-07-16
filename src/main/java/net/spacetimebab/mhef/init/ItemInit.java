@@ -64,6 +64,9 @@ public class ItemInit {
     public static final RegistryObject<Item> POPO_SPAWN_EGG = ITEMS.register("popo_spawn_egg",
             () -> new ForgeSpawnEggItem(EntityInit.POPO, 0x4D3D2D, 0xC27007,
                     new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> ANJANATH_SPAWN_EGG = ITEMS.register("anjanath_spawn_egg",
+            () -> new ForgeSpawnEggItem(EntityInit.ANJANATH, 0xB26D10, 0xB8C20F,
+                    new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

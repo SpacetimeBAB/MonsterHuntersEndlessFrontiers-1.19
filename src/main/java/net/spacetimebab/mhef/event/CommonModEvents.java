@@ -4,6 +4,7 @@ import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.spacetimebab.mhef.MHEF;
+import net.spacetimebab.mhef.entity.client.AnjanathRenderer;
 import net.spacetimebab.mhef.init.EntityInit;
 import net.spacetimebab.mhef.entity.custom.*;
 
@@ -17,6 +18,7 @@ public class CommonModEvents {
         event.put(EntityInit.APTONOTH.get(), AptonothEntity.attributes().build());
         event.put(EntityInit.GASTODON.get(), GastodonEntity.attributes().build());
         event.put(EntityInit.POPO.get(),PopoEntity.attributes().build());
+        event.put(EntityInit.ANJANATH.get(), AnjanathEntity.attributes().build());
 
     }
 
