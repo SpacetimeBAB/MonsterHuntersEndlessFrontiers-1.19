@@ -20,6 +20,11 @@ public class KillObjective implements QuestObjective {
         return QuestInit.KILL_OBJECTIVE.get();
     }
 
+    @Override
+    public int getAmount() {
+        return amount;
+    }
+
     public static Integer amount(KillObjective o) {
         return o.amount;
     }
@@ -30,5 +35,8 @@ public class KillObjective implements QuestObjective {
 
     public static String getName(KillObjective o) {
         return o.entity;
+    }
+    public String getEntity() {
+        return entity;
     }
 }

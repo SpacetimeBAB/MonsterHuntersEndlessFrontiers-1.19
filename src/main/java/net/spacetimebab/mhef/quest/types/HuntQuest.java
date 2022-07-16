@@ -1,7 +1,10 @@
 package net.spacetimebab.mhef.quest.types;
 
 import com.mojang.serialization.Codec;
+import net.minecraft.world.entity.player.Player;
+import net.spacetimebab.mhef.quest.api.QuestObjective;
 import net.spacetimebab.mhef.quest.api.QuestRarity;
+import net.spacetimebab.mhef.quest.objectives.CollectionObjective;
 import net.spacetimebab.mhef.quest.objectives.KillObjective;
 import net.spacetimebab.mhef.quest.api.Quest;
 import net.spacetimebab.mhef.init.QuestInit;
@@ -47,6 +50,26 @@ public class HuntQuest implements Quest {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public List<KillObjective> getObjectives() {
+        return objectives;
+    }
+
+    @Override
+    public List<? extends Reward> getRewards() {
+        return rewards;
+    }
+
+    @Override
+    public void complete(Player player) {
+
     }
 
     public static List<Reward> rewards(HuntQuest o) {

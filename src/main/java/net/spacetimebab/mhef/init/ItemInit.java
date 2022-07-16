@@ -10,15 +10,16 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.MHEF;
 import net.spacetimebab.mhef.item.ModTiers;
+import net.spacetimebab.mhef.item.QuestItem;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MHEF.MOD_ID);
 
 
-    public static final RegistryObject<Item> COMMON_QUEST = ITEMS.register("common_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-    public static final RegistryObject<Item> HIGH_QUEST = ITEMS.register("high_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-    public static final RegistryObject<Item> MASTER_QUEST = ITEMS.register("master_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-    public static final RegistryObject<Item> TEMPERED_QUEST = ITEMS.register("tempered_quest", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> COMMON_QUEST = ITEMS.register("common_quest", () -> new QuestItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> HIGH_QUEST = ITEMS.register("high_quest", () -> new QuestItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> MASTER_QUEST = ITEMS.register("master_quest", () -> new QuestItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+    public static final RegistryObject<Item> TEMPERED_QUEST = ITEMS.register("tempered_quest", () -> new QuestItem(new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 
 
 

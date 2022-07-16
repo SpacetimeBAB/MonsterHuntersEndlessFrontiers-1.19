@@ -28,7 +28,7 @@ public class QuestReloadListener extends SimpleJsonResourceReloadListener {
     protected void apply(Map<ResourceLocation, JsonElement> pObject, ResourceManager pResourceManager, ProfilerFiller pProfiler) {
         for (var entry : pObject.entrySet()) {
             Quest.DIRECT_CODEC.parse(JsonOps.INSTANCE, entry.getValue())
-                    .resultOrPartial(boop-> MHEF.LOGGER.error("Error while parsing json: {}",boop)).ifPresent(Quests.QUESTS::add);
+                    .resultOrPartial(boop-> MHEF.LOGGER.error("Error while parsing json: {}",boop)).ifPresent((a)->Quests.QUESTS.put(entry.getKey(), a));
         }
     }
 }

@@ -1,6 +1,9 @@
 package net.spacetimebab.mhef.quest.rewards;
 
 import com.mojang.serialization.Codec;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.item.ItemStack;
+import net.minecraftforge.registries.ForgeRegistries;
 import net.spacetimebab.mhef.init.QuestInit;
 import net.spacetimebab.mhef.quest.api.Reward;
 
@@ -26,5 +29,8 @@ public class ItemReward implements Reward {
 
     public static String item(ItemReward o) {
         return o.item;
+    }
+    public ItemStack getItem(){
+        return new ItemStack(ForgeRegistries.ITEMS.getValue(new ResourceLocation(item)),quantity);
     }
 }

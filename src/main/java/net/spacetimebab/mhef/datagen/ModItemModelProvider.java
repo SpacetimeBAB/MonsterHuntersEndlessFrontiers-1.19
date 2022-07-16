@@ -7,17 +7,21 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.ItemModelBuilder;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.spacetimebab.mhef.MHEF;
+import net.spacetimebab.mhef.init.BlockInit;
 import net.spacetimebab.mhef.init.ItemInit;
 
 import java.util.function.Supplier;
 import java.util.stream.Stream;
 
 public class ModItemModelProvider extends ItemModelProvider {
+    private final ExistingFileHelper existingFileHelper;
     public ModItemModelProvider(DataGenerator generator, ExistingFileHelper existingFileHelper) {
         super(generator, MHEF.MOD_ID, existingFileHelper);
+        this.existingFileHelper = existingFileHelper;
     }
 
     @Override
@@ -41,14 +45,18 @@ public class ModItemModelProvider extends ItemModelProvider {
                 .forEach(this::simpleGeneratedModel);
 
 
-//        Stream.of()
-//                .map(Supplier::get)
-//                .forEach(this::simpleBlockItemModel);
+        Stream.of(
+                        BlockInit.QUEST_BOARD
+                )
+                .map(Supplier::get)
+                .forEach(this::simpleBlockItemModel);
     }
 
     protected ItemModelBuilder simpleBlockItemModel(Block block) {
         String name = getName(block);
-        return withExistingParent(name, modLoc("block/" + name));
+        ModelFile.UncheckedModelFile ret = new ModelFile.UncheckedModelFile(extendWithFolder(modLoc("block/" + name)));
+        return getBuilder(name).parent(ret);
+//        return withExistingParent(name,);
     }
 
     protected ItemModelBuilder simpleGeneratedModel(Item item) {

@@ -1,6 +1,10 @@
 package net.spacetimebab.mhef.quest.types;
 
 import com.mojang.serialization.Codec;
+import net.minecraft.core.NonNullList;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.spacetimebab.mhef.quest.api.QuestObjective;
 import net.spacetimebab.mhef.quest.api.QuestRarity;
 import net.spacetimebab.mhef.quest.objectives.CollectionObjective;
 import net.spacetimebab.mhef.init.QuestInit;
@@ -47,6 +51,38 @@ public class CollectionQuest implements Quest {
     @Override
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String getDescription() {
+        return description;
+    }
+
+    @Override
+    public List<CollectionObjective> getObjectives() {
+        return objectives;
+    }
+
+    @Override
+    public List<? extends Reward> getRewards() {
+        return rewards;
+    }
+
+    @Override
+    public void complete(Player player) {
+        objectives.forEach(objective ->{
+            int count = objective.getAmount();
+            for(ItemStack itemStack : player.getInventory().items){
+                if(itemStack.is(objective.getItem().getItem())){
+                    if(itemStack.getCount() < count){
+                        count -= itemStack.getCount();
+                        itemStack.setCount(0);
+                    } else {
+                        itemStack.shrink(count);
+                    }
+                }
+            }
+        });
     }
 
     public static List<Reward> rewards(CollectionQuest o) {

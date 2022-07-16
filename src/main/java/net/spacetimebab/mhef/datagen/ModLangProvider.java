@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.spacetimebab.mhef.init.BlockInit;
+import net.spacetimebab.mhef.init.EntityInit;
+import net.spacetimebab.mhef.init.ItemInit;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.ArrayList;
@@ -33,8 +35,8 @@ public class ModLangProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
 
-//        ItemInit.ITEMS.getEntries().forEach(this::itemLang);
-//        EntityInit.ENTITY_TYPES.getEntries().forEach(this::entityLang);
+        ItemInit.ITEMS.getEntries().forEach(this::itemLang);
+        EntityInit.ENTITY_TYPES.getEntries().forEach(this::entityLang);
         BlockInit.BLOCKS.getEntries().forEach(this::blockLang);
 //        add("container.extractor", "Extractor");
 //        add("container.cultivator", "Cultivator");

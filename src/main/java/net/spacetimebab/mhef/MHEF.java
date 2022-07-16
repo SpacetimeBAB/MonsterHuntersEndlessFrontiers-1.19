@@ -10,13 +10,12 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
+import net.spacetimebab.mhef.cap.quest.QuestHolderAttacher;
 import net.spacetimebab.mhef.datagen.*;
 import net.spacetimebab.mhef.elements.ElementAttributes;
-import net.spacetimebab.mhef.init.EffectInit;
+import net.spacetimebab.mhef.init.*;
 //import net.spacetimebab.mhef.init.EnchantmentsInit;
-import net.spacetimebab.mhef.init.EntityInit;
-import net.spacetimebab.mhef.init.ItemInit;
-import net.spacetimebab.mhef.init.QuestInit;
+import net.spacetimebab.mhef.network.NetworkHandler;
 import org.slf4j.Logger;
 import software.bernie.geckolib3.GeckoLib;
 
@@ -39,13 +38,16 @@ public class MHEF
 
         EntityInit.register(modEventBus);
         GeckoLib.initialize();
-
+        BlockInit.BLOCKS.register(modEventBus);
         ElementAttributes.register(modEventBus);
         QuestInit.QUESTS.register(modEventBus);
         QuestInit.REWARDS.register(modEventBus);
         QuestInit.OBJECTIVES.register(modEventBus);
         //EnchantmentsInit.register(modEventBus);
         EffectInit.register(modEventBus);
+        QuestHolderAttacher.register();
+        BlockInit.BLOCK_ENTITIES.register(modEventBus);
+        ContainerInit.MENU_TYPES.register(modEventBus);
 
 
 
@@ -55,7 +57,7 @@ public class MHEF
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-
+        NetworkHandler.register();
     }
     @SubscribeEvent
     public static void onGatherData(GatherDataEvent event) {

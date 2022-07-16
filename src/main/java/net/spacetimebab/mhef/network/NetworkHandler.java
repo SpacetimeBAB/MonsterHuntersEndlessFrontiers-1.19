@@ -1,5 +1,6 @@
 package net.spacetimebab.mhef.network;
 
+import dev._100media.capabilitysyncer.network.SimpleEntityCapabilityStatusPacket;
 import dev._100media.capabilitysyncer.network.SimpleLevelCapabilityStatusPacket;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.network.NetworkRegistry;
@@ -22,7 +23,7 @@ public class NetworkHandler {
 
     public static void register() {
         Stream.<BiConsumer<SimpleChannel, Integer>>builder()
-                .add((channel, id) -> SimpleLevelCapabilityStatusPacket.register(QuestHolderAttacher.QUEST_RL, QuestHolderAttacher::getQuestUnwrap, channel, id))
+                .add((channel, id) -> SimpleEntityCapabilityStatusPacket.register(QuestHolderAttacher.QUEST_RL, QuestHolderAttacher::getQuestUnwrap, channel, id))
                 .build().forEach(consumer -> consumer.accept(CHANNEL, getNextId()));
     }
 
