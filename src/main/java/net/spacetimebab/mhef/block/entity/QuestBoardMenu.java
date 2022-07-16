@@ -23,18 +23,18 @@ public class QuestBoardMenu extends AbstractContainerMenu {
       this(ContainerInit.QUEST_BOARD_MENU.get(), p_39532_, p_39533_);
    }
    public QuestBoardMenu(MenuType<?> p_38960_, int p_38963_, Inventory p_38964_) {
-      this(p_38960_, p_38963_, p_38964_, new SimpleContainer(3));
+      this(p_38960_, p_38963_, p_38964_, new SimpleContainer(5));
    }
 
    protected QuestBoardMenu(MenuType<?> p_38966_, int p_38969_, Inventory p_38970_, Container p_38971_) {
       super(p_38966_, p_38969_);
       this.container = p_38971_;
       this.level = p_38970_.player.level;
-      this.addSlot(new Slot(p_38971_, 0, 56, 34));
-      this.addSlot(new Slot( p_38971_, 1, 28, 34));
-      this.addSlot(new Slot( p_38971_, 2, 28, 34));
-      this.addSlot(new Slot( p_38971_, 3, 28, 34));
-      this.addSlot(new Slot( p_38971_, 4, 28, 34));
+      this.addSlot(new Slot(p_38971_, 0, 11, 25));
+      this.addSlot(new Slot( p_38971_, 1, 44, 50));
+      this.addSlot(new Slot( p_38971_, 2, 77, 33));
+      this.addSlot(new Slot( p_38971_, 3, 110, 29));
+      this.addSlot(new Slot( p_38971_, 4, 143, 56));
 
       for (int i = 0; i < 3; ++i) {
          for (int j = 0; j < 9; ++j) {

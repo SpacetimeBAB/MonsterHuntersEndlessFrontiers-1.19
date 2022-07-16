@@ -17,11 +17,14 @@ import net.minecraft.world.level.block.BaseEntityBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.RenderShape;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.entity.BlockEntityTicker;
+import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.entity.FurnaceBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.spacetimebab.mhef.block.entity.QuestBoardBlockEntity;
 import net.spacetimebab.mhef.cap.quest.QuestHolderAttacher;
+import net.spacetimebab.mhef.init.BlockInit;
 import net.spacetimebab.mhef.init.ItemInit;
 import net.spacetimebab.mhef.quest.QuestInfo;
 import net.spacetimebab.mhef.quest.Quests;
@@ -91,4 +94,14 @@ public class QuestBoardBlock extends BaseEntityBlock {
     public RenderShape getRenderShape(BlockState pState) {
         return RenderShape.MODEL;
     }
+
+    @javax.annotation.Nullable
+    protected static <T extends BlockEntity> BlockEntityTicker<T> createFurnaceTicker(Level p_151988_, BlockEntityType<T> p_151989_, BlockEntityType<? extends QuestBoardBlockEntity> p_151990_) {
+        return p_151988_.isClientSide ? null : createTickerHelper(p_151989_, p_151990_, QuestBoardBlockEntity::serverTick);
+    }
+    @javax.annotation.Nullable
+    public <T extends BlockEntity> BlockEntityTicker<T> getTicker(Level pLevel, BlockState pState, BlockEntityType<T> pBlockEntityType) {
+        return createFurnaceTicker(pLevel, pBlockEntityType, BlockInit.QUEST_BOARD_BLOCK_ENTITY.get());
+    }
+
 }

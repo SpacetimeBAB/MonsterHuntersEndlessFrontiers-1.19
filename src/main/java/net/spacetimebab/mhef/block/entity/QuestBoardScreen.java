@@ -54,7 +54,8 @@ public class QuestBoardScreen extends AbstractContainerScreen<QuestBoardMenu> {
     }
 
     public boolean mouseClicked(double pMouseX, double pMouseY, int pButton) {
-        return this.widthTooNarrow /*&& this.recipeBookComponent.isVisible()*/ ? true : super.mouseClicked(pMouseX, pMouseY, pButton);
+
+        return this.widthTooNarrow || super.mouseClicked(pMouseX, pMouseY, pButton);
     }
 
 
