@@ -30,5 +30,7 @@
   "effect.mhef.paralyzed": "Paralyzed",
   "effect.mhef.dragon_blight": "Dragon Blight",
   "entity.mhef.anjanath": "Anjanath",
-  "item.mhef.anjanath_spawn_egg": "Anjanath Spawn Egg"
+  "item.mhef.anjanath_spawn_egg": "Anjanath Spawn Egg",
+  "entity.mhef.apceros": "Apceros",
+  "item.mhef.apceros_spawn_egg": "Apceros Spawn Egg"
 }

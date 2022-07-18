@@ -28,10 +28,10 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.scores.Team;
 import net.minecraftforge.event.ForgeEventFactory;
-import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.elements.ElementAttributes;
 import net.spacetimebab.mhef.entity.TamableMonster;
 import net.spacetimebab.mhef.init.ItemInit;
+import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import software.bernie.geckolib3.core.IAnimatable;
 import software.bernie.geckolib3.core.PlayState;
@@ -129,15 +129,22 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
         return null;
     }
 
+
+    //public boolean isGrow(ItemStack pStack){
+    //    return pStack.getItem() == ItemInit.ANCIENT_BONE.get();
+    //}
+
     /* TAMEABLE */
     @Override
     public InteractionResult mobInteract(Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
         Item iteme = itemstack.getItem();
-        Item Item = itemstack.getItem();
 
         Item itemForTaming = Items.ROTTEN_FLESH;
-        RegistryObject<Item> itemForGrowing = ItemInit.ANCIENT_BONE;
+            /* GROWING */
+       // if (isGrow(itemstack)){
+       //     return super.mobInteract(player, hand);
+        //}
 
         if (iteme == itemForTaming && !isTame()) {
             if (this.level.isClientSide) {
@@ -156,7 +163,6 @@ public class VelocipreyEntity extends TamableMonster implements IAnimatable {
                         setSitting(true);
                     }
                 }
-
                 return InteractionResult.SUCCESS;
             }
         }

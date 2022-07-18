@@ -19,6 +19,7 @@ public class CommonModEvents {
         event.put(EntityInit.GASTODON.get(), GastodonEntity.attributes().build());
         event.put(EntityInit.POPO.get(),PopoEntity.attributes().build());
         event.put(EntityInit.ANJANATH.get(), AnjanathEntity.attributes().build());
+        event.put(EntityInit.APCEROS.get(),ApcerosEntity.attributes().build());
 
     }
 

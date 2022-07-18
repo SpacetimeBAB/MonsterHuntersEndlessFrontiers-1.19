@@ -50,6 +50,11 @@ public class EntityInit {
                     () -> EntityType.Builder.of(AnjanathEntity::new, MobCategory.MONSTER)
                             .sized(4f, 6f)
                             .build(new ResourceLocation(MHEF.MOD_ID, "anjanath").toString()));
+    public static final RegistryObject<EntityType<ApcerosEntity>> APCEROS =
+            ENTITY_TYPES.register("apceros",
+                    () -> EntityType.Builder.of(ApcerosEntity::new, MobCategory.MONSTER)
+                            .sized(3f, 3f)
+                            .build(new ResourceLocation(MHEF.MOD_ID, "apceros").toString()));
 
     public static void register(IEventBus eventBus) {
         ENTITY_TYPES.register(eventBus);

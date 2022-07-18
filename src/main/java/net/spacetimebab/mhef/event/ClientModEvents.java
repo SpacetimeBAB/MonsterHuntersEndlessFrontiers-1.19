@@ -24,6 +24,7 @@ public class ClientModEvents {
         event.registerEntityRenderer(EntityInit.GASTODON.get(), GastodonRenderer::new);
         event.registerEntityRenderer(EntityInit.POPO.get(),PopoRenderer::new);
         event.registerEntityRenderer(EntityInit.ANJANATH.get(),AnjanathRenderer::new);
+        event.registerEntityRenderer(EntityInit.APCEROS.get(),ApcerosRenderer::new);
     }
     @SubscribeEvent
     public static void onClientSetup(final FMLClientSetupEvent event) {
