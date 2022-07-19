@@ -10,6 +10,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.spacetimebab.mhef.MHEF;
 import net.spacetimebab.mhef.effect.DragonBlightEffect;
+import net.spacetimebab.mhef.effect.NoxiousPoisonEffect;
 import net.spacetimebab.mhef.effect.ParalyzedEffect;
 
 public class EffectInit{
@@ -20,6 +21,9 @@ public class EffectInit{
             () -> new ParalyzedEffect(MobEffectCategory.HARMFUL, 3124687));
     public static final RegistryObject<MobEffect> DRAGON_BLIGHT_EFFECT = MOB_EFFECTS.register("dragon_blight",
             () -> new DragonBlightEffect(MobEffectCategory.HARMFUL, 3124687));
+    public static final RegistryObject<MobEffect> NOXIOUS_POISON = MOB_EFFECTS.register("noxious_poison",
+            () -> new NoxiousPoisonEffect(MobEffectCategory.HARMFUL,5149489));
+
 
 
     public static void register(IEventBus eventBus){

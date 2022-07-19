@@ -32,5 +32,6 @@
   "entity.mhef.anjanath": "Anjanath",
   "item.mhef.anjanath_spawn_egg": "Anjanath Spawn Egg",
   "entity.mhef.apceros": "Apceros",
-  "item.mhef.apceros_spawn_egg": "Apceros Spawn Egg"
+  "item.mhef.apceros_spawn_egg": "Apceros Spawn Egg",
+  "effect.mhef.noxious_poison": "Noxious Poison"
 }
